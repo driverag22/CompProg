@@ -7,51 +7,49 @@ int n;
 double s [4];
 bool yes;
 
-void setArr(double a [4], double s [4]){
-	for (int i = 0; i < 4; i++){
-		a[i]=s[i];
-	}
-}
-
-void func(int p, double s [4]){
+void func(double nums [4], int p){
 	if (p == 0){
-		if (s[0] == 24){
+		if(fabs(nums[0] - 24.0) <=1e-9){ 
 			yes = true;
 		}
 		return;
 	}
-	double a [4];
 
-	setArr(a, s);
 
-	for (int i = 0; i < p; i++){ //try every possibility
-		for(int k = i + 1; k < p; k++){
-			int temp = a[i];
-			a[i] = a[i] + a[k];
-			func(p-1, a);
+	for(int i = 0; i < p; i++){
+		for (int j = 0; j < p; j++){
+			if (j == i){
+				continue;
+			}
+			double temp = nums[i];
+			double temp2 = nums[p];
+			double n [4] = { nums[i] + nums[j], nums[i]-nums[j], nums[i]*nums[j], nums[i]/nums[j] };
+			
+			for(int k = 0; k < 4; k++){
+				nums[i] = n[k];
+				nums[p] = nums[j];
+				nums[j] = temp2;
+				func(nums, p-1);
+			}
+			nums[j] = nums[p];
+			nums[p] = temp2;
+			nums[i] = temp;			
 
-			a[i] = temp;
-			a[i] = a[i] - a[k];
-			func(p-1, a);
-
-			a[i] = temp;
-			a[i] = a[i] / a[k];
-			func(p-1, a);
-
-			a[i] = temp;
-			a[i] = a[i] * a[k];
-			func(p-1, a);
-
-			setArr(a, s);
 		}
 	}
+
+
 }
 
 void oneRun(){
 	yes = false;
-	cin >> s[0] >> s[1] >> s[2] >> s[3];
+	int a;
+	for (int i = 0; i < 4; i++){
+		cin >> a;
+		s[i] = a * 1.0;
+	}
 
-	func(4, s);
+	func(s, 3);
 	if(yes){
 		cout << "YES" << endl;
 	} else {

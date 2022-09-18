@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 #include <ostream>
 using namespace std;
-/* typedef long long ll; */
 
 int N, T, M;
 bool yes;
