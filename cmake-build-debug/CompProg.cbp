@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CompProg"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CompProg">
+				<Option output="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/CompProg.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 CompProg"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CompProg/fast">
+				<Option output="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/CompProg.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 CompProg/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="crackingthesafe">
+				<Option output="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/crackingthesafe.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 crackingthesafe"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="crackingthesafe/fast">
+				<Option output="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/crackingthesafe.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 crackingthesafe/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="oldcrackingthesafe">
+				<Option output="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/oldcrackingthesafe.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 oldcrackingthesafe"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="oldcrackingthesafe/fast">
+				<Option output="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/oldcrackingthesafe.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 oldcrackingthesafe/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sss">
+				<Option output="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/sss.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 sss"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sss/fast">
+				<Option output="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/sss.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 sss/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/20210716/OneDrive/Desktop/CompProg/in_process/crackingthesafe.cpp">
+			<Option target="CompProg"/>
+			<Option target="crackingthesafe"/>
+		</Unit>
+		<Unit filename="C:/Users/20210716/OneDrive/Desktop/CompProg/in_process/cubing.cpp">
+			<Option target="CompProg"/>
+		</Unit>
+		<Unit filename="C:/Users/20210716/OneDrive/Desktop/CompProg/in_process/oldcrackingthesafe.cpp">
+			<Option target="CompProg"/>
+			<Option target="oldcrackingthesafe"/>
+		</Unit>
+		<Unit filename="C:/Users/20210716/OneDrive/Desktop/CompProg/in_process/oldcubing.cpp">
+			<Option target="CompProg"/>
+		</Unit>
+		<Unit filename="C:/Users/20210716/OneDrive/Desktop/CompProg/in_process/sss.cpp">
+			<Option target="sss"/>
+		</Unit>
+		<Unit filename="C:/Users/20210716/OneDrive/Desktop/CompProg/lift.cpp">
+			<Option target="CompProg"/>
+		</Unit>
+		<Unit filename="C:/Users/20210716/OneDrive/Desktop/CompProg/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

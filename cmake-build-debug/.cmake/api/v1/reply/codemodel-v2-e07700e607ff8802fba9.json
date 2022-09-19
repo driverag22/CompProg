@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CompProg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CompProg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CompProg-Debug-1ff3d2a833580100b0b4.json",
+					"name" : "CompProg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "crackingthesafe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-crackingthesafe-Debug-814ece9d98fd28efd133.json",
+					"name" : "crackingthesafe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "oldcrackingthesafe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-oldcrackingthesafe-Debug-196e9506da4b9bb99a64.json",
+					"name" : "oldcrackingthesafe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sss::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sss-Debug-9c1efbdce01e761b0538.json",
+					"name" : "sss",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/20210716/OneDrive/Desktop/CompProg/cmake-build-debug",
+		"source" : "C:/Users/20210716/OneDrive/Desktop/CompProg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

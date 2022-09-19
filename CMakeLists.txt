@@ -11,3 +11,5 @@ add_executable(CompProg
         lift.cpp)
 
 add_executable(crackingthesafe in_process/crackingthesafe.cpp)
+add_executable(oldcrackingthesafe in_process/oldcrackingthesafe.cpp)
+add_executable(sss in_process/sss.cpp)
