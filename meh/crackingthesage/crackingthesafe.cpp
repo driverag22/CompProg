@@ -10,7 +10,7 @@ void rec(double s [4], int p){
 	if (yes == true) return;
 
 	if (p == 0){
-		if(s[0] == 24.0){
+		if(abs(s[0] - 24.0) < 0.0001){
 			yes = true;
 		}
 		return;
@@ -26,7 +26,7 @@ void rec(double s [4], int p){
 			double temp2 = s[j];
 			
 			double t[4] = {temp+temp2, temp-temp2, temp*temp2, temp/temp2};
-
+		
 			s[j] = s[p];
 
 			for(int k = 0; k < 4; k++){
