@@ -2,6 +2,7 @@
 #include <ostream>
 #include <vector>
 using namespace std;
+typedef long long ll;
 
 int n, D, counter;
 int l [105];
@@ -32,7 +33,7 @@ bool allOff(int s [105]){
 	return a;
 }
 
-void recurse(int s [105], int t, int c, int n){
+void recurse(int s [105], int t, ll c, int n){
 	if (allOff(s)) ans.push_back(c);
 	if(!checkPast(s, t)) return;
 	if(t == n) ans.push_back(c);	
@@ -48,6 +49,8 @@ void oneRun(){
 	cin >> n >> D;
 
 	for(int i = 0; i < n; i++) cin >> l[i];
+	ll c = 0;
+	recurse(l, 0, c, n);
 
 	vector<int>::const_iterator it = ans.begin();	
 	int min = *(it++);
