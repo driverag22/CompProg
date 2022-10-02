@@ -21,6 +21,7 @@ bool allOff(int s [105], int n){
 void recurse(int s [105], int index, int c, int n){
 	if(index == n){
 		if(allOff(s,n)) ans.push_back(c);
+		return;
 	}
     if(index > D && s[index-D-1] == 1) return;
 
