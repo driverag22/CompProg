@@ -2,8 +2,11 @@
 #include <ostream>
 using namespace std;
 
+const unsigned int MAXANGER = (1 << 31);
 int n;
 bool yes;
+int students [1505];
+int anger [1505]; //current floor, last stopped floor
 
 int sumUp(int a, int b [1505]){
     int sum = 0;
@@ -13,19 +16,20 @@ int sumUp(int a, int b [1505]){
 
 void oneRun(){
     cin >> n;
-    int students [1505];
-    for(int i = 1; i <= n; i++) cin >> students[i];
-    int anger [n+1][n+1]; //current floor, last stopped floor
+	students[0] = 0;
+    for(int i = 1; i <= n; i++) {
+		cin >> students[i]; 
+		students[i] += students[i-1];
+	}
 
-    for(int i = 0; i <= n; i++){
-        anger[0][i] = 0;
-    }
+    anger[0] = 0; 
 
-    for(int i = 1; i <= n; i++){ //current floor
-        for(int j = 0; j <= n; j++){ //last not-stopped floor
-            int stop = sumUp(i, students);
-            anger[i][j] = min(anger[i-1][j] + stop, anger[i-1][]);
-        }
+    for(int i = 1; i <= n; i++){ 
+		anger[i] = MAXANGER;
+		for(int j = 0; j < i; j++){
+			anger[i] = min(anger[i], anger[j] + students[n] - students[i]);
+			anger[j] += students[i] - students[j];
+		}
     }
 
     cout << anger[n] << endl;
