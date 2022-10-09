@@ -1,0 +1,4 @@
+C:/Users/20210716/Desktop/CompProg/cmake-build-debug/CMakeFiles/CompProg.dir
+C:/Users/20210716/Desktop/CompProg/cmake-build-debug/CMakeFiles/bowl.dir
+C:/Users/20210716/Desktop/CompProg/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/20210716/Desktop/CompProg/cmake-build-debug/CMakeFiles/rebuild_cache.dir
