@@ -6,8 +6,11 @@ using namespace std;
 int recurse(int index, int counter, int height, int h [9], int r [9], int R [9], int bowls [9], int last, int n){
     if(counter == 0) return height;
     if(bowls[index] == 0){
-        if(index == n-1) recurse(0, counter, height, h, r, R, bowls, last, n);
-        recurse(index+1, counter, height, h, r, R, bowls, last, n);
+        if(index == n-1){ 
+			recurse(0, counter, height, h, r, R, bowls, last, n);
+		}else{
+		    recurse(index+1, counter, height, h, r, R, bowls, last, n);
+		}
     }
 
     bowls[index] = 0;
@@ -28,7 +31,7 @@ int recurse(int index, int counter, int height, int h [9], int r [9], int R [9],
     } else{
         a = recurse(index+1, counter-1, height + sum, h, r, R, bowls, index, n);
         bowls[index] = 1;
-        b = recurse(index + 1, counter, height, h, r, R, bowls, last, n);
+        b = recurse(index+1, counter, height, h, r, R, bowls, last, n);
     }
     return min(a, b);
 }
@@ -45,7 +48,7 @@ void oneRun(){
         cin >> h[i] >> r[i] >> R[i];
         bowls[i] = 1;
     }
-    int ans = recurse(0, n, 0, h, r, R, bowls, -1, n);
+    int ans = recurse(0, n, 0, h, r, R, bowls, 0, n);
 
     cout << ans << endl;
 
