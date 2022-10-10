@@ -1,0 +1,4 @@
+C:/Users/20210716/Desktop/CompProg/cmake-build-release/CMakeFiles/CompProg.dir
+C:/Users/20210716/Desktop/CompProg/cmake-build-release/CMakeFiles/serialnum.dir
+C:/Users/20210716/Desktop/CompProg/cmake-build-release/CMakeFiles/edit_cache.dir
+C:/Users/20210716/Desktop/CompProg/cmake-build-release/CMakeFiles/rebuild_cache.dir

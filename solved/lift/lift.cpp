@@ -26,8 +26,8 @@ void oneRun(){
 		anger[i] = anger[0] + students[n] - students[i];
 		anger[0] += students[i] - students[0];
 		for(int j = 1; j < i; j++){
+			anger[j] += students[i-1] - students[j];
 			anger[i] = min(anger[i], anger[j] + students[n] - students[i]);
-			anger[j] += students[i] - students[j];
 		}
     }
 
