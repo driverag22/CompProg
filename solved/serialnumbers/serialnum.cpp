@@ -25,6 +25,17 @@ void oneRun(){
         }
     }
 
+    for(int i = 1; i<= N; i++) cout << G[i] << ",";
+    cout << endl;
+    for(int i = 0; i <= N; i++){
+        for (int j = 0; j <= M-1; j++){
+            cout << result[i][j] << ", ";
+        }
+        cout << endl;
+    }
+
+
+
     cout << result[N][0] << endl;
 
 }
