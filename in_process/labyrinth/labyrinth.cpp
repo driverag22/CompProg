@@ -14,7 +14,7 @@ struct Node{
 	int visited = 0;
 };
 
-Node nodes[107][107];
+Node nodes[207][207];
 
 void DFS(int x, int y){
 	if (nodes[x][y].visited == 1 || nodes[x][y].type == '#'){
