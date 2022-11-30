@@ -13,14 +13,13 @@ void oneRun(){
     }
     int result [n+3];
     result[0] = 0;
+    cout << result[0] << endl;
     int payedShops [104];
-    /* cout << "starting iteration" << endl; */
     for (int i = 1; i <= n; i++) {
+        cout << result[0] << endl;
         int bestStore = -1;
         int minPrice = INT_MAX;
-        /* cout << "stating with number = " << i << endl; */
         for(int j = 0; j < m; j++){
-            /* cout << "stating with shop = " << j << endl; */
             if (shops[j][0] == 0){
                 continue;
             }
@@ -36,12 +35,14 @@ void oneRun(){
                     minPrice = shops[j][2] + shops[j][1];
                 }
             }
-            /* cout << "done with shop=" << j << endl; */
+            cout << result[0] << endl;
         }
-        /* cout << "done with number=" << i << endl; */
         payedShops[bestStore] = 1;
         shops[bestStore][0]--;
+        /* cout << "with values " << result[0] << endl; */
+        cout << "before we have " << i << endl;
         result[i] = result[i-1] + minPrice;
+        cout << "after" << endl;
     }
     cout << "iteration over" << endl;
 
