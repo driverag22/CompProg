@@ -1,8 +1,0 @@
-# ninja log v5
-481	616	6869492625027989	bowl.exe	d8d30ae20649b926
-1	823	6871055168108022	CMakeFiles/serialnum.dir/in_process/serialnumbers/serialnum.cpp.obj	5021c78f4fcba6d2
-826	974	6871055169548038	serialnum.exe	c21ad768aa911b11
-4	434	6871057331323384	CMakeFiles/serialnum.dir/in_process/serialnumbers/serialnum.cpp.obj	5021c78f4fcba6d2
-435	561	6871057332603679	serialnum.exe	c21ad768aa911b11
-4	424	6871057690268566	CMakeFiles/serialnum.dir/in_process/serialnumbers/serialnum.cpp.obj	5021c78f4fcba6d2
-425	551	6871057691519816	serialnum.exe	c21ad768aa911b11
