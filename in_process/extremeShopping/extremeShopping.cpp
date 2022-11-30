@@ -13,41 +13,33 @@ void oneRun(){
     }
     int result [n+3];
     result[0] = 0;
-    cout << result[0] << endl;
     int payedShops [104];
     for (int i = 1; i <= n; i++) {
-        cout << result[0] << endl;
         int bestStore = -1;
         int minPrice = INT_MAX;
         for(int j = 0; j < m; j++){
             if (shops[j][0] == 0){
                 continue;
             }
-
             if (payedShops[j] == 1) {
-                if (minPrice < shops[j][2]) {
+                if (minPrice > shops[j][1]) {
                     bestStore = j;
-                    minPrice = shops[j][2];
+                    minPrice = shops[j][1];
                 } 
             } else {
-                if (minPrice < shops[j][2] + shops[j][1]){
+                if (minPrice > shops[j][1] + shops[j][2]){
                     bestStore = j;
-                    minPrice = shops[j][2] + shops[j][1];
+                    minPrice = shops[j][1] + shops[j][2];
                 }
             }
-            cout << result[0] << endl;
         }
+        result[i] = result[i-1] + minPrice;
         payedShops[bestStore] = 1;
         shops[bestStore][0]--;
-        /* cout << "with values " << result[0] << endl; */
-        cout << i << i-1 << result[0] << endl;
-        cout << "before we have " << i << endl;
-        result[i] = result[i-1] + minPrice;
-        cout << "after" << endl;
     }
-    cout << "iteration over" << endl;
-
-    cout << result[n] << endl;
+    for (int i = 0; i <= n; i++) {
+        cout << i << ":" << result[i] << endl;
+    }
 }
 
 int main(){
