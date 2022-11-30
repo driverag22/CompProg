@@ -40,6 +40,7 @@ void oneRun(){
         payedShops[bestStore] = 1;
         shops[bestStore][0]--;
         /* cout << "with values " << result[0] << endl; */
+        cout << i << i-1 << result[0] << endl;
         cout << "before we have " << i << endl;
         result[i] = result[i-1] + minPrice;
         cout << "after" << endl;
