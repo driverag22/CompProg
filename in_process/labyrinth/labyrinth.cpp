@@ -13,6 +13,7 @@ struct Node{
 	int visited = 0;
 };
 
+Node nodes[201][201];
 
 void DFS(int x, int y, Node nodes[201][201]) {
 	if (nodes[x][y].visited == 1 || nodes[x][y].type == '#'){
@@ -34,8 +35,8 @@ void DFS(int x, int y, Node nodes[201][201]) {
 void oneRun(){
     int h,w;
     cin >> h >> w;
-    Node nodes[201][201];
 	counter = 0;
+
     // nodes[width][height]
     for(int y = 0; y < h; y++){
         string s;
@@ -48,16 +49,14 @@ void oneRun(){
             }
         }
     }
-    cout << endl;
-    cout << endl;
+
     for(int y = 0; y < h; y++){
-        for(int x = 0; x<w;x++){
+        for(int x = 0; x < w; x++){
             cout << nodes[x][y].type;
         }
         cout << endl;
     }
-    cout << endl;
-    cout << endl;
+
 	DFS(init_x, init_y, nodes);
     printf("%.2f \n", counter);
 }
