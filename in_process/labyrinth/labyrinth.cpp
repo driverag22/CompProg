@@ -36,7 +36,6 @@ void oneRun(){
     int h,w;
     cin >> h >> w;
 	counter = 0;
-
     // nodes[width][height]
     for(int y = 0; y < h; y++){
         string s;
@@ -48,13 +47,6 @@ void oneRun(){
                 init_y = y; init_x = x;
             }
         }
-    }
-
-    for(int y = 0; y < h; y++){
-        for(int x = 0; x < w; x++){
-            cout << nodes[x][y].type;
-        }
-        cout << endl;
     }
 
 	DFS(init_x, init_y, nodes);
