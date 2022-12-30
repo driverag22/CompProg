@@ -10,13 +10,13 @@ int dy[4] = {0, 1, 0, -1};
 
 struct Node{
 	char type = '#';
-	int visited = 0;
+	bool visited = false;
 };
 
 Node nodes[201][201];
 
 void DFS(int x, int y, Node nodes[201][201]) {
-	if (nodes[x][y].visited == 1 || nodes[x][y].type == '#'){
+	if (nodes[x][y].visited == true || nodes[x][y].type == '#'){
 		return;
 	}
 	if (nodes[x][y].type == '.'){
@@ -26,7 +26,7 @@ void DFS(int x, int y, Node nodes[201][201]) {
         counter++;
         return;
     }
-	nodes[x][y].visited = 1;
+	nodes[x][y].visited = true;
     for (int i = 0; i < 4; i++){
 		DFS(x + dx[i], y + dy[i], nodes);
 	}
@@ -42,7 +42,7 @@ void oneRun(){
         cin >> s;
         for(int x = 0; x < w; x++){
             nodes[x][y].type = s[x];
-            nodes[x][y].visited = 0;
+            nodes[x][y].visited = false;
 			if(s[x] == 's'){
                 init_y = y; init_x = x;
             }
