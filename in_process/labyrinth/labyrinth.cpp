@@ -13,9 +13,7 @@ struct Node{
 	bool visited = false;
 };
 
-Node nodes[201][201];
-
-void DFS(int x, int y, Node nodes[201][201]) {
+void DFS(int x, int y, Node nodes[100][100]) {
 	if (nodes[x][y].visited == true || nodes[x][y].type == '#'){
 		return;
 	}
@@ -36,7 +34,9 @@ void oneRun(){
     int h,w;
     cin >> h >> w;
 	counter = 0;
+    vector<vector<Node>> cells;
     // nodes[width][height]
+    Node nodes[100][100];
     for(int y = 0; y < h; y++){
         string s;
         cin >> s;
