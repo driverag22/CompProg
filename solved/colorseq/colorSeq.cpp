@@ -13,12 +13,15 @@ void oneRun(){
     int j = 0;
 
     for (int i = 0; i < n; i++) {
-        if (upSide[i] == '*') j++; 
-        else if (upSide[i] == s[j] || downSide[i] == s[j]) j++;
+        if ( (upSide[i] == '*') || (downSide[i] == '*') ) j++; 
+        else if ( (upSide[i] == s[j]) || (downSide[i] == s[j]) ) j++;
+        if (j == s.length()){
+            cout << "win" << endl;
+            return;
+        }
     }
 
-    if (j == s.length()) cout << "win" << endl;
-    else cout << "lose" << endl;
+    cout << "lose" << endl;
 }
 
 int main(){
