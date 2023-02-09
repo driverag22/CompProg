@@ -23,12 +23,12 @@ void oneRun(){
     // Sort decreasing order:
     sort(shops+1, shops+m+1, [](Shop const &a, Shop const &b){ return a.price > b.price; }); 
 
-    for (i = 0; i <= n; i++) result[i][0] = INT_MAX; //no shops
+    for (i = 0; i <= n; i++) result[i][0] = 10003; //no shops
     for (j = 0; j <= m; j++) result[0][j] = 0; //no items
 
+    priceChooseShop = 0;
     for (i = 1; i <= n; i++) { // iterate from buying 1 items to n items
         for (j = 1; j <= m; j++) { // iterate from buying from only first to all m shops
-            priceChooseShop = 0;
             availableItems = shops[j].numItems;
             if ( i > availableItems ) {
                 // buy all possible items, the rest from other shops
