@@ -12,8 +12,10 @@ struct Node{
 	char type = '#';
 	bool visited = false;
 };
+// nodes[width][height]
+Node nodes[100][100];
 
-void DFS(int x, int y, Node nodes[100][100]) {
+void DFS(int x, int y, int h, int w) {
 	if (nodes[x][y].visited == true || nodes[x][y].type == '#'){
 		return;
 	}
@@ -26,7 +28,10 @@ void DFS(int x, int y, Node nodes[100][100]) {
     }
 	nodes[x][y].visited = true;
     for (int i = 0; i < 4; i++){
-		DFS(x + dx[i], y + dy[i], nodes);
+        if (x + dx[i] < w && x + dx[i] > -1 
+            && y + dy[i] < h && y + dy[i] > -1) {
+		    DFS(x + dx[i], y + dy[i], h, w);
+        }
 	}
 }
 
@@ -34,9 +39,6 @@ void oneRun(){
     int h,w;
     cin >> h >> w;
 	counter = 0;
-    vector<vector<Node>> cells;
-    // nodes[width][height]
-    Node nodes[100][100];
     for(int y = 0; y < h; y++){
         string s;
         cin >> s;
@@ -49,7 +51,7 @@ void oneRun(){
         }
     }
 
-	DFS(init_x, init_y, nodes);
+	DFS(init_x, init_y, h, w);
     printf("%.2f \n", counter);
 }
 
