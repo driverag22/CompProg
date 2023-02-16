@@ -32,6 +32,5 @@ int main() {
     }
     if (tracker.length() == 3) cout << "C";
     else for (char a : tracker) counter(a);
-    cout << endl;
     return 0;
 }
