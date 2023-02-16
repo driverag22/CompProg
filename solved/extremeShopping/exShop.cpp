@@ -23,7 +23,7 @@ void oneRun(){
     // Sort decreasing order:
     sort(shops+1, shops+m+1, [](Shop const &a, Shop const &b){ return a.price > b.price; }); 
 
-    for (i = 0; i <= n; i++) result[i][0] = 10003; //no shops
+    for (i = 0; i <= n; i++) result[i][0] = 1e9; //no shops
     for (j = 0; j <= m; j++) result[0][j] = 0; //no items
 
     priceChooseShop = 0;
