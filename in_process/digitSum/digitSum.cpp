@@ -5,22 +5,28 @@
 #include <bits/stdc++.h>
 #include "vector"
 using namespace std;
-long long sumOfDigitsUntil(int n) {
-    long long sum = 0;
-    if (n < 0) return 0;
-    for (int i = 0; i <= ceil(log10(n)); i++) {
-        long long k = floor( ( n - floor( n / pow(10,i+1) ) * pow(10,i+1) ) / pow(10,i) );
-        sum += 45 * pow(10, i) * floor( n / pow(10, i+1) );
-        sum += pow(10, i) * ( k * (k-1) ) / 2;
-        sum += k * (n + 1 - pow(10, i) * floor( n / pow(10,i) ) );
-    }
-    return sum;
+typedef long long ll;
+ll sumOfDigits(ll n) {
+    if (n < 10) return (n*(n+1))/2;
+
+    ll d = (ll)(log10(n));
+
+    ll *a = new ll[d+1];
+    a[0]=0; a[1]=45;
+    for (ll i = 2; i <= d; i++) 
+        a[i] = a[i-1]*10 + 45*ceil(pow(10,i-1));
+
+    ll p = ceil(pow(10, d));
+    ll msd = n / p;
+
+    return msd*a[d] + (msd*(msd-1)/2)*p + 
+        msd*(1+n%p) + sumOfDigits(n%p);
 }
 
 void oneRun(){
-    long long sum, a, b;
+    ll sum, a, b;
     cin >> a >> b;
-    sum = sumOfDigitsUntil(b) - sumOfDigitsUntil(a-1);
+    sum = sumOfDigits(b) - sumOfDigits(a-1);
     cout << sum << endl;
 }
 int main() {
