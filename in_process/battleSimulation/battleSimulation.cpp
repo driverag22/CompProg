@@ -30,7 +30,7 @@ int main() {
             tracker += input[i];
         }
     }
-    if (tracker.length() == 3) cout << "C";
-    else for (char a : tracker) counter(a);
+    for (char a : tracker) counter(a);
+    cout << endl;
     return 0;
 }
