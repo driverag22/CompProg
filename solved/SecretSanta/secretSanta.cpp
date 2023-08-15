@@ -11,7 +11,6 @@ int factorial (int t) {
 }
 
 int main(){
-
     int N;
     cin >> N;
 
