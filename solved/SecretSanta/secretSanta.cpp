@@ -9,6 +9,7 @@ int factorial (int t) {
     for (int i = 2; i <= t; i++) fact *= i;
     return fact;
 }
+
 int main(){
 
     int N;
