@@ -1,6 +1,6 @@
 # Competitive programming problem set
 
-Just the set of competitive programming problems I have solved/are currently working on.
+Just the set of competitive programming problems I have solved/am currently working on.
 
 Pretty intuitive but:
 
